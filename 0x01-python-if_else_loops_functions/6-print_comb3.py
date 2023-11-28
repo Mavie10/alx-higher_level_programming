@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for i in range (100):
-    print("{:02d}"/format(i),end="\n" if i == 99 else",")
+for tens_digit in range(10):
+    for ones_digit in range(tens_digit + 1, 10):
+        print(f"{tens_digit}{ones_digit}", end=", " if ones_digit < 9 else "\n")
