@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-for i in range(25, -1 , -1):
-    c = i + ord('A')
-    if i % 2 == 1;
-    c += 32
-    print("{:c}".format(c), end="")
-
+for char_code in range(ord('z'), ord('a') - 1, -1):
+    char = chr(char_code)
+    case = 'lower' if char.islower() else 'upper'
+    print(f"{char:{case}}", end='')
