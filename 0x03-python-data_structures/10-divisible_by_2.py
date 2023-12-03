@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
     if my_list is None:
-        return NOne
-    listdivs = []
+        return None
     for i in my_list:
-        if (i % 2) == 0:
-            listdivs.append True
-        else: 
-        listdivs.append False
-        return listdivs
+        if(i % 2) == 0:
+            return(i)
+    
