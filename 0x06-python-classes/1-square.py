@@ -5,7 +5,7 @@
 class Square:
     """Define the Aquare"""
 
-    def __int__(self, size):
+    def __init__(self, size):
       """ constructor"""
 
         self.__size = size
