@@ -2,5 +2,5 @@
 """Square"""
 
 class Square:
-    """Define the Square"""
+"""Define the Square"""
     pass
