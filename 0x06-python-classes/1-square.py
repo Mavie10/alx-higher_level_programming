@@ -3,10 +3,8 @@
 
 
 class Square:
-    """Define the Aquare"""
-
+    """Define the Square"""
 
     def __init__(self, size):
-      """ constructor size of the square"""
-
+        """Constructor: Set the size of the square."""
         self.__size = size
