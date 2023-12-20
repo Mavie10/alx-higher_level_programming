@@ -5,7 +5,8 @@
 class Square:
     """Define the Aquare"""
 
+
     def __init__(self, size):
-      """ constructor"""
+      """ constructor size of the square"""
 
         self.__size = size
