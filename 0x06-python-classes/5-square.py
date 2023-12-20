@@ -32,5 +32,3 @@ class Square:
             for j in range(self.size):
                 print("#", end="\n" if j == self.size - 1 and i != j else "")
         print()
-
-
