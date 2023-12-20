@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""Square"""
+
+
 class Square:
+   """DEfine the Square"""
+
+
     def __init__(self, size=0):
+         """Constructor: Set the size of the square."""
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if size < 0 :
