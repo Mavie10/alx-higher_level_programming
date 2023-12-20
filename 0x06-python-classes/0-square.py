@@ -2,6 +2,5 @@
 """Square"""
 
 class Square:
-    """Define the Aquare"""
+    """Define the Square"""
     pass
-
