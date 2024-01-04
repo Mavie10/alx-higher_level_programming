@@ -3,6 +3,7 @@
 Define a class rectangle
 """
 
+
 class rectangle:
     """representation of a rectangle"""
     def __init__(self, width=0, height=0):
@@ -14,6 +15,7 @@ class rectangle:
     def width(Self):
         """getter for private instance attribute width"""
         return self.__width
+
     @width.setter
     def width(self, value):
         """setter for private instance attribute width"""
@@ -27,6 +29,7 @@ class rectangle:
     def height(self):
         """getter for private isntance attribute height"""
         return self.__height
+
     @height.setter
     def height(self, value):
         """setter for the private instance attribute height"""
