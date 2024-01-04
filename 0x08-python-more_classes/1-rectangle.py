@@ -4,7 +4,7 @@ Define a class rectangle
 """
 
 
-class rectangle:
+class Rectangle:
     """representation of a rectangle"""
     def __init__(self, width=0, height=0):
         """initialize the rectangle"""
@@ -12,7 +12,7 @@ class rectangle:
         self.height = height
 
     @property
-    def width(Self):
+    def width(self):
         """getter for private instance attribute width"""
         return self.__width
 
