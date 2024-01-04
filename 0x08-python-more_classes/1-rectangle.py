@@ -3,7 +3,6 @@
 Define a class rectangle
 """
 
-
 class Rectangle:
     """representation of a rectangle"""
     def __init__(self, width=0, height=0):
@@ -27,14 +26,14 @@ class Rectangle:
 
     @property
     def height(self):
-        """getter for private isntance attribute height"""
+        """getter for private instance attribute height"""
         return self.__height
 
     @height.setter
     def height(self, value):
         """setter for the private instance attribute height"""
-        if type(value is not int:
-                raise TypeError("height must be an integer")
-        if value < 0;
-                raise ValueError("height must be >= 0")
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
         self.__height = value
