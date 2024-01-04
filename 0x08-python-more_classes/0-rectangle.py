@@ -4,5 +4,5 @@ Defining an empty class rectangle
 """
 
 class Rectangle:
-    """Empty rep of rectangle """
+    """Empty rep of rectangle"""
     pass
