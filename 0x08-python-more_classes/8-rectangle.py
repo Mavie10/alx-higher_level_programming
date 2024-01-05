@@ -68,8 +68,8 @@ class Rectangle:
         """Return a string representation of the rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
-    @classmethod
-    def bigger_or_equal(cls, rect_1, rect_2):
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
         """Returns the bigger of two rectangles
         Args:
             rect_1: The first rectangle
@@ -79,7 +79,7 @@ class Rectangle:
         Returns:
             The rectangle with a larger area
         """
-        if not isinstance(rect_1, cls) or not isinstance(rect_2, cls):
+        if not isinstance(rect_1, Rectangle) or not isinstance(rect_2, Rectangle):
             raise TypeError("Both arguments must be instances of Rectangle")
         if rect_2.area() >= rect_1.area():
             return rect_2
