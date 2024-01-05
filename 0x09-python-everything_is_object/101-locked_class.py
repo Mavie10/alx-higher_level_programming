@@ -2,7 +2,6 @@
 """Define a locked class"""
 
 
-
 class LockedClass:
     """
     Prevent user from instantiating
