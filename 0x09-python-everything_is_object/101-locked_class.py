@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""Define a locked cLass"""
-
-
+"""Define a locked class"""
 
 class LockedClass:
     """
-    Prevent user from instantiating 
+    Prevent user from instantiating
     """
 
     __slots__ = ("first_name")
+
