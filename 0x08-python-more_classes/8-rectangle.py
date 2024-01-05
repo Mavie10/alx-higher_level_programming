@@ -3,6 +3,7 @@
 Define a class rectangle
 """
 
+
 class Rectangle:
     """representation of a rectangle"""
 
