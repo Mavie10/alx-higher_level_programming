@@ -37,7 +37,7 @@ class Rectangle:
     def height(self):
         """getter for private instance attribute height"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """setter for the private instance attribute height"""
@@ -67,8 +67,3 @@ class Rectangle:
     def __repr__(self):
         """return a string representation of the rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-
-    def __del__(self):
-        """print a message for every deletion of a rectangle"""
-        print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
