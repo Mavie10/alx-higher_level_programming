@@ -69,11 +69,6 @@ class Rectangle:
         """return a string representation of the rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
-    def display(self):
-        """display the rectangle with '#' characters"""
-        for i in range(self.__height):
-            print("#" * self.__width)
-
     def __del__(self):
         """print a message for every deletion of a rectangle"""
         print("Bye rectangle...")
