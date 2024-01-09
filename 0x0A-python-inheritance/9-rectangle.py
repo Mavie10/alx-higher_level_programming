@@ -1,18 +1,21 @@
 #!/usr/bin/python3
-'''Module for BaseGeometry class.'''
+'''Module for Rectangle class.'''
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class BaseGeometry:
-    '''BaseGeometry class'''
+class Rectangle(BaseGeometry):
+    '''A subclass representing a rectangle.'''
+    def __init__(self, width, height):
+        '''Constructor.'''
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
+
     def area(self):
-        '''Method to calculate the area (to be overridden by subclasses)'''
-        raise NotImplementedError("Subclasses must implement the area method")
+        '''Method which returns area of rectangle.'''
+        return self.__width * self.__height
 
-    def perimeter(self):
-        '''Method to calculate the perimeter (to be overridden by subclasses)'''
-        raise NotImplementedError("Subclasses must implement the perimeter method")
-
-    def integer_validator(self, name, value):
-        '''Method to validate that a value is a positive integer.'''
-        if not isinstance(value, int) or value <= 0:
-            raise ValueError(f"{name} must be a positive integer")
+    def __str__(self):
+        '''String representation method.'''
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
