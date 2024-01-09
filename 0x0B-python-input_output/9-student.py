@@ -3,7 +3,6 @@
 
 import json
 
-
 class Student:
     """Determine student"""
     def __init__(self, first_name, last_name, age):
@@ -15,4 +14,3 @@ class Student:
     def to_json(self):
         """Return JSON representation of the student"""
         return json.dumps(self.__dict__)
-
