@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """define function"""
 
-
-
 def pascal_triangle(n):
     """define pascals triangle of size nreturn a list of lists"""
     if n <= 0:
