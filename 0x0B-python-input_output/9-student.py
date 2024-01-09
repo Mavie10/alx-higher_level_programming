@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Define the student class"""
 
-import json
 
 class Student:
     """Determine student"""
@@ -12,5 +11,5 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """Return JSON representation of the student"""
-        return json.dumps(self.__dict__)
+        """Return dictionary representation of the student"""
+        return self.__dict__
