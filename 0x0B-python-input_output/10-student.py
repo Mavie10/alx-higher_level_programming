@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """add attribute"""
 
+
 class Student:
     """student class"""
     def __init__(self, first_name, last_name, age):
