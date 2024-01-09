@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-"""define write class"""
+"""Define the student class"""
+
+import json
 
 
-class student:
-    """determine student"""
+class Student:
+    """Determine student"""
     def __init__(self, first_name, last_name, age):
-        """initialize the student"""
+        """Initialize the student"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self):
-        """return dictionary of student"""
-        return self.__dict__
+        """Return JSON representation of the student"""
+        return json.dumps(self.__dict__)
+
